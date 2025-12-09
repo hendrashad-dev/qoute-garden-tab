@@ -1,0 +1,26 @@
+body {
+    width: 350px;
+    min-height: 450px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 1rem;
+    max-width: 100%;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.form-container {
+    padding: 1rem;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+textarea {
+    height: 120px;
+}

@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "Quotes Garden",
+    "version": "0.1.0",
+    "description": "A beautiful garden of quotes to inspire you!",
+    
+    "permissions": [
+      "storage",
+      "activeTab",
+      "scripting",
+      "contextMenus",
+      "notifications"
+    ],
+
+    "background": {
+      "service_worker": "background.js"
+    },
+
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "flower.svg",
+        "48": "flower.svg",
+        "128": "flower.svg"
+      }
+    },
+
+    "chrome_url_overrides": {
+      "newtab": "newtab.html"
+    },
+    
+    "icons": {
+      "16": "flower.svg",
+      "48": "flower.svg",
+      "128": "flower.svg"
+    }
+  }

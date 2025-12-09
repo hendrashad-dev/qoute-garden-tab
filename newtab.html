@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qoutes Garden</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="background-pattern"></div>
+
+    <div class="container newtab-container">
+        <header>
+
+            <img src="flower.svg" alt="flower" class="flower-icon">
+            <h1>Quotes Garden</h1>
+
+        </header>
+
+        <main>
+            <section id="daily-quote-section" class="daily-quote-card">
+                <h2 class="section-title">Quote!</h2>
+                <div class="quote-content large-quote">
+                    <p class="text" id="daily-quote-text">"Loading..."</p>
+                    <p class="author" id="daily-quote-author"></p>
+                </div>
+
+                <div class="quote-actions">
+
+                    <button id="btn-copy" class="action-btn" title="Copy to Clipboard">
+                        <i class="fa-solid fa-clipboard"></i>
+                    </button>
+
+                </div>
+
+            </section>
+
+            <section class="quick-actions">
+                <button id="btn-plant-quote" class="primary-btn">Plant a Quote</button>
+                <a href="index.html" class="primary-btn"
+                    style="text-decoration: none; display: inline-block; padding: 7px 20px;" target="_blank">
+                    View My Garden
+                </a>
+            </section>
+
+        </main>
+        <footer>
+            <p>Made with <i class="fa-solid fa-heart"></i> by Hend</p>
+        </footer>
+    </div>
+
+    <div id="plant-modal" class="modal hidden">
+        <div class="modal-content">
+
+            <span class="close-modal"><i class="fa-solid fa-xmark"></i></span>
+            <h2>Plant a New Quote</h2>
+
+            <form id="plant-form">
+                <textarea id="new-quote-text" placeholder="Type your quote here..." required></textarea>
+                <input type="text" id="new-quote-author" placeholder="Author Name" required>
+                <button type="submit" class="primary-btn">Plant It!</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

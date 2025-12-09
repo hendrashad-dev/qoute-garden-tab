@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Plant a Quote</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="popup.css">
+
+    </head>
+    <body>
+        <div class="background-pattern"></div>
+
+        <div class="container">
+            <header>
+                <img src="flower.svg" alt="Sketchy Flower" class="flower-icon" style="width: 40px;">
+                <h1>Plant a Quote</h1>
+            </header>
+
+            <main>
+                <div class="form-container">
+                    <div class="popup-plant-form">
+                        <form id="popup-plant-form">
+
+                            <div class="form-group">
+
+                                <textarea id="popup-quote-text" placeholder="type here your qoute here ..." required>
+                                </textarea>
+
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="popup-quote-author" placeholder="Author Name" required>
+                            </div>
+                            <button type="submit" class="btn-plant" style="width: 100%; font-size: 1.5rem;">
+                                Plant It!
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 1rem;">
+                    <button id="btn-view-garden" class="primary-btn small">View My Garden</button>
+                </div>
+            </main>
+        </div>
+        <script src="script.js"></script>
+
+    </body>
+</html>
+
