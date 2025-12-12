@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Patrick+Hand&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Patrick+Hand&family=Permanent+Marker&family=VT323&family=Inter:wght@400;700&family=Fira+Code:wght@400;700&family=Nunito:wght@400;700&family=Roboto+Mono:wght@400;700&family=Pacifico&family=Lora:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -41,10 +42,46 @@
                     <button id="btn-copy" class="action-btn" title="Copy to Clipboard">
                         <i class="fa-solid fa-clipboard"></i>
                     </button>
+                    <button id="btn-settings" class="action-btn" title="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
 
                 </div>
 
             </section>
+
+            <div class="dashboard-grid">
+
+                <section id="focus-section" class="dashboard-card">
+
+                    <h2 class="section-title">Focus Flower</h2>
+
+                    <div class="focus-container">
+                        <div id="focus-display" class="focus-display">
+                            <i class="fa-solid fa-seedling" id="focus-icon"></i>
+                            <div id="timer-display">25:00</div>
+                        </div>
+                        
+                        <div class="focus-controls">
+                            <button id="btn-start-focus" class="primary-btn small">Plant Seed</button>
+                            <button id="btn-stop-focus" class="primary-btn small hidden">Give Up</button>
+                        </div>
+                        <div class="focus-status" id="focus-status">Stay focused to grow a flower!</div>
+                    </div>
+                </section>
+
+
+                <section id="journal-section" class="dashboard-card">
+
+                    <h2 class="section-title">Garden Journal</h2>
+                    <div class="journal-container">
+
+                        <label for="journal-entry" class="journal-prompt">How do you feel today?</label>
+                        <textarea id="journal-entry" placeholder="Plant your thoughts here..."></textarea>
+                        <div class="journal-status" id="journal-status">Saved</div>
+                    </div>
+                </section>
+            </div>
 
             <section class="quick-actions">
                 <button id="btn-plant-quote" class="primary-btn">Plant a Quote</button>
@@ -63,7 +100,7 @@
     <div id="plant-modal" class="modal hidden">
         <div class="modal-content">
 
-            <span class="close-modal"><i class="fa-solid fa-xmark"></i></span>
+            <span class="close-modal" id="close-plant-modal"><i class="fa-solid fa-xmark"></i></span>
             <h2>Plant a New Quote</h2>
 
             <form id="plant-form">
@@ -72,6 +109,20 @@
                 <button type="submit" class="primary-btn">Plant It!</button>
             </form>
 
+        </div>
+    </div>
+
+    <div id="settings-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" id="close-settings-modal"><i class="fa-solid fa-xmark"></i></span>
+            <h2>Settings</h2>
+
+            <div class="settings-section">
+                <h3>Themes</h3>
+                <div class="theme-grid" id="theme-grid">
+
+                </div>
+            </div>
         </div>
     </div>
 
